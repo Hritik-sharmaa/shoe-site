@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Helment from "../components/helmet/Helment";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Helment title={'Home'}/>
+      <div>Home</div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
