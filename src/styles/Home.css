@@ -1,0 +1,82 @@
+.home-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.left-main h1 {
+    font-family: var(--banner-font);
+    font-size: 90px;
+    color: var(--main-text-color);
+    line-height: 100px;
+    letter-spacing: 10px;
+}
+
+.left-main p {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--main-text-color);
+    margin-top: 20px;
+}
+
+.left-main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    font-size: 20px;
+    margin-top: 30px;
+    border: 2px solid var(--accent-text-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.left-main button:hover {
+    background-color: var(--accent-text-color);
+    color: var(--main-text-color);
+}
+
+.left-main span {
+    margin-left: 10px;
+}
+
+.banner-img {
+    margin-top: 17%;
+    width: 35rem;
+    transform: rotate(-40deg);
+    margin-right: 10px;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: var(--main-font);
+    color: #fff;
+    background-color: var(--accent-text-color);
+    width: 100px;
+    height: 105px;
+    border: 2px solid rgb(255, 21, 60);
+    position: absolute;
+    top: 15%;
+    right: 120px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.seller-img  {
+    width: 8em;
+    margin-right: 90%;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../header/Header.css";
 import { NavLink } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
@@ -7,6 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
+  const [searchBar, setSearchBar] = useState(false);
   const navLink = [
     {
       path: "home",
@@ -29,6 +30,11 @@ const Header = () => {
       display: "Sports",
     },
   ];
+
+  const toggleSearchBar = () => {
+    setSearchBar(!searchBar);
+  };
+
   return (
     <header>
       <div className="main container mx-auto">
@@ -47,7 +53,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="icons">
-          <span className="icon">
+          <span className="icon" onClick={toggleSearchBar}>
             <IoSearch />
           </span>
           <span className="icon">
@@ -63,6 +69,11 @@ const Header = () => {
           </span>
         </div>
       </div>
+      {searchBar && (
+        <div className="search-bar active">
+          <input type="text" placeholder="search an item..." />
+        </div>
+      )}
     </header>
   );
 };

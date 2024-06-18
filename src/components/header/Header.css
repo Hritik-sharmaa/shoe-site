@@ -2,6 +2,7 @@ header {
     width: 100%;
     height: 70px;
     margin-top: 10px;
+    font-family: var(--main-font);
 }
 
 .main {
@@ -14,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     column-gap: 8px;
-    color: #0c3a5b;
+    color: var(--main-text-color);
     font-size: 40px;
     font-weight: bold;
 }
@@ -29,13 +30,13 @@ header {
     display: flex;
     align-items: center;
     column-gap: 2rem;
-    border: 3px solid #fd3a72;
+    border: 3px solid var(--accent-text-color);
     padding: 8px 25px;
     border-radius: 50px;
 }
 
 .menu li a{
-    color: #0c3a5b;
+    color: var(--main-text-color);
     font-size: 18px;
 }
  
@@ -48,8 +49,9 @@ header {
     align-items: center;
     column-gap: 2rem;
     font-size: 25px;
-    color: #0c3a5b;
+    color: var(--main-text-color);
     position: relative;
+    cursor: pointer;
 }
 
 .icon {
@@ -68,9 +70,35 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: #fd3a72;
+    background-color: var(--accent-text-color);
     font-size: 0.7rem;
     font-weight: 600;
     z-index: 10;
     border-radius: 50%;
+}
+
+.search-bar {
+    position: absolute;
+    top: 18px;
+    right: 18%;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #cacaca;
+    display: none;
+
+}
+
+.search-bar input {
+    background-color: #cacaca;
+    padding-left: 10px;
+    width: 180px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar.active {
+    display: block;
+
 }
